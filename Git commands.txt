@@ -80,16 +80,19 @@ GIT BASH COMMANDS
 
 
 
+
 Git Ignore method : There is a file you can create named as (.gitignore) The .gitignore file let the git bash terminal to ignore the files from the git repository whose name has been written in it.
 
+Git Change command syntax: use cmd "git config --global alias.unstage 'restore -- stagged --' " and then you can use the cmd "git unstage <File name>" instead of the previous syntax. this method goes same with the other commands.
 
 
+ 
 
 
 In case if the SSH key of the Github account has been deleted then these steps should be followed:
 1. "ssh-keygen -t rsa -b 4096" -C "yourEmail@example.com" For Initiating the process and creating the ssh key.
 2. "eval $(ssh-agent -s)"  then do  "ssh-add ~/.ssh/id_rsa" for adding the private to the ssh agent and it will give us the Process ID. 
-3. "clip < ~/.ssh/id_rsa.pub" Copying ssh ID to your clipboard and then go to the github account settings and click on "create a new ssh key" and then past it there
+3. "clip < ~/.ssh/id_rsa.pub" you can also use "tail" instead of "clip <" Copying ssh ID to your clipboard and then go to the github account settings and click on "create a new ssh key" and then past it there
 
 
 
