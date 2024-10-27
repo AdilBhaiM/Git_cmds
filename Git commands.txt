@@ -1,0 +1,103 @@
+
+
+UNIX COMMANDS
+
+
+"pwd" it gives you PRESENT WORKING DIRECTORY in return
+
+"ls" It gives you all the files or folders in the repository in list.
+
+"cd <File_name>" it will bring you in the folder that you mentioned in the command.
+
+"touch <File_name>" this command will create the file with the type according to the format you type in cmd (EG: error.log) in the pwd (PRESENT WORKING DIRECTORY)
+
+
+
+
+
+GIT BASH COMMANDS
+
+
+"git init" for creating a repository or .git folder in ylour project folder.
+
+"git status" for checking your current state in git.
+
+"git add . or git add --a"for stagging untracked all files.
+
+"git restore --staged <File_name>" this will unstage the stagged file.
+
+"git checkout -- <File_name>" this command will replace this modified file to the last commited stage
+
+"git checkout -f" this command will replace all modified file to the last commited stage
+
+"git diff <File_name>" for checking the changes made in the given file.
+
+"git diff" this command will compare the working directory and the stagging area.
+
+"git diff --stagged" Please run this command when there is something in stagging area cause it compare the changes in the stagging area files and tells the changes made in them.
+
+"git commit -m "changes made in the commits" " for commiting all stagged files.
+
+"git commit -a -m "changes made in the commits" " for skipping the stagging area and direct commiting files (This command dont track the untracked file).
+
+"git log -p -1" after selecting the first commit then you can use "git commit --amend" this will append your commit message and your commit with the commit you entered at the first command instead of creating a new commit for you.
+
+"git log" for checking all commits did by the email.
+
+"git log -p" for checking all commits with their difference in the content did by the email.
+
+"git log --stat" for checking all commits with their number of differences in the content did by the email.
+
+"git log --pretty=oneline" for checking all commits did by the email in one line.
+
+"git log --pretty=full" for checking all commits did by the email with author.
+
+"git log --pretty=short" for checking all commits did by the email without author.
+
+"git log --since=(number of days in which you want to see all commits).days" for checking commits did in the number of days or years or months or weeks you mentioned in the command.
+
+"git log --format="%h -- %an" " this syntax is based on what you write after % in left and and right. here is the link for more commands of % like this:  https://git-scm.com/docs/pretty-formats
+
+"git config --global {user.name or user.email} 'Adli Malik'" for changing name or email.
+
+"git rm <file_name>" this command will remove the file you mentioned in the command.
+
+"git rm --cached <file_name>" this command will untrack the tracking files because the tracking files don tget ignored using .gitignore file.
+
+"git mv <file_old_name> <File_new_name>" this command will rename the file you entered.
+
+"git remote add origin <Link> " for adding the account repository to our system.
+
+"git remote " for viewing name of the remote repository in our system.
+
+"git remote -v" for viewing name and link of the remote repository in our system.
+
+"git push -u origin master" for pushing the changes to the repository.
+
+"git clone <Link of the github repository> <Name you want to write (If you want to do)>" This command runs and it fetch all the files of the git repository from github using the link and paste the folder named as if you entered one.
+
+
+
+
+
+Git Ignore method : There is a file you can create named as (.gitignore) The .gitignore file let the git bash terminal to ignore the files from the git repository whose name has been written in it.
+
+
+
+
+
+In case if the SSH key of the Github account has been deleted then these steps should be followed:
+1. "ssh-keygen -t rsa -b 4096" -C "yourEmail@example.com" For Initiating the process and creating the ssh key.
+2. "eval $(ssh-agent -s)"  then do  "ssh-add ~/.ssh/id_rsa" for adding the private to the ssh agent and it will give us the Process ID. 
+3. "clip < ~/.ssh/id_rsa.pub" Copying ssh ID to your clipboard and then go to the github account settings and click on "create a new ssh key" and then past it there
+
+
+
+
+
+An alpha numeric number define every commit and represent all thing about it.
+
+
+
+
+"rm -rf .git" Before running this command I need you to get alarm first cause it delete the folder named .git in your repository.
