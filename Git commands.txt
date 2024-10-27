@@ -14,8 +14,12 @@ UNIX COMMANDS
 
 
 
+3 VIDEOS REMAINING PLEASE WATCH!!!! (CODE WITH HARRY)
 
-GIT BASH COMMANDS
+
+
+
+FOR GIT BASH COMMANDS : 
 
 
 "git init" for creating a repository or .git folder in ylour project folder.
@@ -66,6 +70,16 @@ GIT BASH COMMANDS
 
 "git mv <file_old_name> <File_new_name>" this command will rename the file you entered.
 
+
+
+
+3 VIDEOS REMAINING PLEASE WATCH!!!! (CODE WITH HARRY)
+
+
+
+
+FOR REMOTE REPOSITORIES :
+
 "git remote add origin <Link> " for adding the account repository to our system.
 
 "git remote " for viewing name of the remote repository in our system.
@@ -80,6 +94,30 @@ GIT BASH COMMANDS
 
 
 
+FOR BRANCHING :
+
+FIRST THING BEFORE STARTING WITH BRANCHES :
+				MAKE SURE that you COMMIT the the CHANGES in the CURRENT BRANCH and then you can SWITCH it if you want.
+
+"git checkout -b <new_branch_name>" This command will create you a new branch with the name you give it and switch you to this branch form previous one.
+
+"git checkout <new_branch_name>" This command will switch you to this branch form previous one.
+
+"git branch" this will show you how many branches are in this git repository and in which you are working.
+
+"git merge <Branch_name_you_want_merge_in_the_current_branch>" this command will merge the changes of the branch you entered in the command with your current branch.
+
+
+
+
+
+3 VIDEOS REMAINING PLEASE WATCH!!!! (CODE WITH HARRY)
+
+
+
+
+
+GENRAL METHODS IN TERMINAL : 
 
 Git Ignore method : There is a file you can create named as (.gitignore) The .gitignore file let the git bash terminal to ignore the files from the git repository whose name has been written in it.
 
@@ -89,18 +127,38 @@ Git Change command syntax: use cmd "git config --global alias.unstage 'restore -
  
 
 
+
+SSH KEY FOR GITHUB PUSH OR PULL ACCESS FOR YOUR SYSTEM :
+
 In case if the SSH key of the Github account has been deleted then these steps should be followed:
+
 1. "ssh-keygen -t rsa -b 4096" -C "yourEmail@example.com" For Initiating the process and creating the ssh key.
+
 2. "eval $(ssh-agent -s)"  then do  "ssh-add ~/.ssh/id_rsa" for adding the private to the ssh agent and it will give us the Process ID. 
+
 3. "clip < ~/.ssh/id_rsa.pub" you can also use "tail" instead of "clip <" Copying ssh ID to your clipboard and then go to the github account settings and click on "create a new ssh key" and then past it there
 
 
 
 
 
+
+INFO : 
+
 An alpha numeric number define every commit and represent all thing about it.
 
+"{ESCAPE_KEY} :wq" from exiting the editor in terminal of the git bash.
 
 
 
-"rm -rf .git" Before running this command I need you to get alarm first cause it delete the folder named .git in your repository.
+
+
+3 VIDEOS REMAINING PLEASE WATCH!!!! (CODE WITH HARRY)
+
+
+
+
+
+DANGEROUS COMMAND: 
+
+"rm -rf .git" Before running this command I need you to get alarm first because it delete the folder named as .git of your repository and you lost your ability to stage or commit you changes.
