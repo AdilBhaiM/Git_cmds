@@ -128,16 +128,21 @@ Git Change command syntax: use cmd "git config --global alias.unstage 'restore -
 
 
 
-SSH KEY FOR GITHUB PUSH OR PULL ACCESS FOR YOUR SYSTEM :
+SSH KEY FOR GITHUB PUSH OR PULL ACCESS FOR YOUR SYSTEM (ALSO FOR MACOS) :
 
 In case if the SSH key of the Github account has been deleted then these steps should be followed:
 
-1. FOR WINDOWS "ssh-keygen -t rsa -b 4096" -C "yourEmail@example.com" , FOR MACOS "ssh-keygen -t ed25519 -C "your_email@example.com"
-" For Initiating the process and creating the ssh key.
+1. FOR WINDOWS "ssh-keygen -t rsa -b 4096" -C "yourEmail@example.com"
+FOR MACOS "ssh-keygen -t ed25519 -C "your_email@example.com"" 
+For Initiating the process and creating the ssh key.
 
-2. "eval $(ssh-agent -s)"  then do  "ssh-add ~/.ssh/id_rsa" for adding the private to the ssh agent and it will give us the Process ID. 
+2. FOR WINDOWS "eval $(ssh-agent -s)"  then do  "ssh-add ~/.ssh/id_rsa"
+FOR MACOS "eval $(ssh-agent -s)" then do "ssh-add -K ~/.ssh/id_ed25519"  then  (FOR CONFIRMING) use  "ssh-add -l"  
+for adding the private to the ssh agent and it will give us the Process ID. 
 
-3. "clip < ~/.ssh/id_rsa.pub" you can also use "tail" instead of "clip <" Copying ssh ID to your clipboard and then go to the github account settings and click on "create a new ssh key" and then past it there
+3. FOR WINDOWS "clip < ~/.ssh/id_rsa.pub" you can also use "tail" instead of "clip <" 
+FOR MACOS "pbcopy < ~/.ssh/id_ed25519.pub"
+Copying ssh ID to your clipboard and then go to the github account settings and click on "create a new ssh key" and then past it there
 
 
 
