@@ -132,7 +132,8 @@ SSH KEY FOR GITHUB PUSH OR PULL ACCESS FOR YOUR SYSTEM :
 
 In case if the SSH key of the Github account has been deleted then these steps should be followed:
 
-1. "ssh-keygen -t rsa -b 4096" -C "yourEmail@example.com" For Initiating the process and creating the ssh key.
+1. FOR WINDOWS "ssh-keygen -t rsa -b 4096" -C "yourEmail@example.com" , FOR MACOS "ssh-keygen -t ed25519 -C "your_email@example.com"
+" For Initiating the process and creating the ssh key.
 
 2. "eval $(ssh-agent -s)"  then do  "ssh-add ~/.ssh/id_rsa" for adding the private to the ssh agent and it will give us the Process ID. 
 
